@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 # --- APP CONFIG ---
-st.set_page_config(page_title="SHRIRAM Logistics Portal", layout="wide")
+st.set_page_config(page_title="Samantha Logistics Portal", layout="wide")
 
 # --- MOCK DATABASE (In-memory for demo) ---
 if 'trips' not in st.session_state:
@@ -16,7 +16,7 @@ st.sidebar.title("Navigation")
 role = st.sidebar.radio("Select Your Role:", ["Sidharthan (Truck Owner)", "Client (Bidder)", "Shriram (Admin)"])
 
 # --- PANEL 1: SIDHARTHAN (Truck Owner) ---
-if role == "Sidharthan (Truck Owner)":
+if role == "Murray (Truck Owner)":
     st.header("Post Available Return Trip")
     with st.form("truck_entry"):
         col1, col2 = st.columns(2)
